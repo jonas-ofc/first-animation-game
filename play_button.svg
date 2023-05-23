@@ -1,0 +1,52 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="423.32" height="296.24" viewBox="0 0 423.32 296.24">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #3b2612;
+      }
+
+      .cls-3 {
+        fill: #523519;
+      }
+
+      .cls-4 {
+        fill: #593a1b;
+      }
+
+      .cls-5 {
+        fill: #603e1e;
+      }
+
+      .cls-6 {
+        fill: #754c24;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 0.75px;
+      }
+
+      .cls-7 {
+        fill: lime;
+      }
+    </style>
+  </defs>
+  <g>
+    <g class="cls-1">
+      <polygon class="cls-2" points="208.99 296.24 199.68 279.91 205.06 204.01 214.37 220.33 208.99 296.24"/>
+      <polygon class="cls-3" points="233.29 16.32 223.98 0 414.01 184.1 423.32 200.43 233.29 16.32"/>
+      <polygon class="cls-2" points="216.95 117.45 207.64 101.13 223.98 0 233.29 16.32 216.95 117.45"/>
+      <polygon class="cls-4" points="19.19 100.15 9.88 83.83 207.64 101.13 216.95 117.45 19.19 100.15"/>
+      <polygon class="cls-2" points="9.31 210.03 0 193.71 9.88 83.83 19.19 100.15 9.31 210.03"/>
+      <polygon class="cls-5" points="233.29 16.32 423.32 200.43 208.99 296.24 214.37 220.33 9.31 210.03 19.19 100.15 216.95 117.45 233.29 16.32"/>
+    </g>
+    <path class="cls-6" d="M18,121.53l393.69,64.73Z"/>
+    <path class="cls-6" d="M6.65,173.26l346,59Z"/>
+    <path class="cls-6" d="M215.65,101.26l130.89,20.27Z"/>
+    <path class="cls-6" d="M224.65,53.76h0Z"/>
+    <path class="cls-6" d="M211.29,251.72l61.94,14.76Z"/>
+  </g>
+  <polygon class="cls-7" points="264.18 108.78 253.9 215.42 359.04 182.14 264.18 108.78"/>
+</svg>

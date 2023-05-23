@@ -1,0 +1,70 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="426" height="295" viewBox="0 0 426 295">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #3b2612;
+      }
+
+      .cls-3 {
+        fill: #523519;
+      }
+
+      .cls-4 {
+        fill: #593a1b;
+      }
+
+      .cls-5 {
+        fill: #603e1e;
+      }
+
+      .cls-6 {
+        fill: #754c24;
+        stroke-width: 0.75px;
+      }
+
+      .cls-6, .cls-9 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-7 {
+        fill: #42210b;
+      }
+
+      .cls-8 {
+        fill: #ed1c24;
+      }
+
+      .cls-9 {
+        fill: #fff;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g>
+    <g class="cls-1">
+      <polygon class="cls-2" points="210.01 295.47 200.7 279.15 206.07 203.24 215.38 219.57 210.01 295.47"/>
+      <polygon class="cls-3" points="234.31 15.56 225 -0.76 415.03 183.34 424.34 199.67 234.31 15.56"/>
+      <polygon class="cls-2" points="217.97 116.69 208.66 100.36 225 -0.76 234.31 15.56 217.97 116.69"/>
+      <polygon class="cls-4" points="20.21 99.39 10.9 83.06 208.66 100.36 217.97 116.69 20.21 99.39"/>
+      <polygon class="cls-2" points="10.33 209.27 1.02 192.94 10.9 83.06 20.21 99.39 10.33 209.27"/>
+      <polygon class="cls-5" points="234.31 15.56 424.34 199.67 210.01 295.47 215.38 219.57 10.33 209.27 20.21 99.39 217.97 116.69 234.31 15.56"/>
+    </g>
+    <path class="cls-6" d="M19,120.77l393.69,64.72Z"/>
+    <path class="cls-6" d="M7.67,172.49l346,59Z"/>
+    <path class="cls-6" d="M216.67,100.49l130.88,20.28Z"/>
+    <path class="cls-6" d="M225.67,53h0Z"/>
+    <path class="cls-6" d="M212.31,251l61.94,14.75Z"/>
+  </g>
+  <g>
+    <polygon class="cls-7" points="253.94 161.78 253.94 213.51 287.66 231 316.74 170.86 253.94 161.78"/>
+    <polygon class="cls-8" points="284.73 104.62 233 168.59 337 177.21 284.73 104.62"/>
+    <rect class="cls-9" x="265.57" y="177.67" width="30.24" height="29.5"/>
+    <path class="cls-9" d="M280.68,177.67v0Z"/>
+    <path class="cls-9" d="M265.57,192.42h0Z"/>
+  </g>
+</svg>

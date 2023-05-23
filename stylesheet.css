@@ -1,0 +1,886 @@
+#screen {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#points {
+    width: 100%;
+    height: 100%;
+    font-family: 'South Park :)Smilie version', Fallback, sans-serif;
+    font-size: 2vw;
+    color: white;
+    text-align: center;
+    top: 8.15vw;
+    left: -0.5vw;
+    position: absolute;
+    transform: rotate(2deg);
+}
+
+
+.level_complete_points {
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    font-family: 'South Park :)Smilie version', Fallback, sans-serif;
+    font-size: 12vw;
+    color: white;
+    text-align: center;
+    top: 35.5vw;
+    left: 33.9vw;
+    transform: rotate(5deg);
+}
+
+.game_over_points {
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    font-family: 'South Park :)Smilie version', Fallback, sans-serif;
+    font-size: 12vw;
+    color: white;
+    text-align: center;
+    top: 35.5vw;
+    left: 33.9vw;
+    transform: rotate(5deg);
+}
+
+@font-face {
+    font-family: 'South Park :)Smilie version';
+    font-style: normal;
+    font-weight: normal;
+    src: local('South Park :)Smilie version'), url('south park.woff') format('woff');
+}
+
+.start_screen {
+    width: 100%;
+    height: 100%;
+    background-image: url(screen_start.svg);
+    z-index: 300000;
+    position: absolute;
+    background-size: cover;
+}
+
+.start_button {
+    position: absolute;
+    top: 20vw;
+    left: 58vw;
+    width: 30vw;
+    height: 20vw;
+    background-image: url(button_start.svg);
+    background-size: cover;
+}
+
+
+
+#start_button:hover {
+    width: 30vw;
+    height: 20vw;
+    transform: rotate(25deg);
+
+}
+
+.howtoplay_button {
+    position: absolute;
+    top: 38vw;
+    left: 42vw;
+    width: 28vw;
+    height: 7vw;
+    background-image: url(button_howtoplay.svg);
+    background-size: cover;
+
+}
+
+.howtoplay_button:hover {
+
+    width: 34vw;
+    height: 8vw;
+    left: 40vw;
+}
+
+.quit_button {
+    position: absolute;
+    top: 45vw;
+    left: 50vw;
+    width: 10vw;
+    height: 5vw;
+    background-image: url(button_quit.svg);
+    background-size: cover;
+
+}
+
+.quit_button:hover {
+
+    width: 16vw;
+    height: 8vw;
+    left: 48vw;
+}
+
+
+
+.howtoplay_screen {
+    width: 100%;
+    height: 100%;
+    background-image: url(screen_howtoplay.svg);
+    z-index: 300000;
+    position: absolute;
+    background-size: cover;
+}
+
+.howtoplay_start {
+    position: absolute;
+    top: 28.7vw;
+    left: 70vw;
+    width: 25vw;
+    height: 17vw;
+    background-image: url(button_start.svg);
+    background-size: cover;
+
+}
+
+.howtoplay_start:hover {
+
+    width: 28vw;
+    height: 19vw;
+    left: 68vw;
+    transform: rotate(25deg);
+}
+
+.howtoplay_quit {
+    position: absolute;
+    top: 47.2vw;
+    left: 72vw;
+    width: 10vw;
+    height: 6vw;
+    background-image: url(button_quit.svg);
+    background-size: cover;
+
+}
+
+.howtoplay_quit:hover {
+
+    width: 11vw;
+    height: 6.5vw;
+    left: 71.5vw;
+
+}
+
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.freeze {
+    animation-play-state: paused;
+}
+
+@keyframes fade_out_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade_out {
+    animation-name: fade_out_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+#game_over {}
+
+.fishFailedScreen {
+    width: 100%;
+    height: 100%;
+    background-image: url(screen_failedfish.svg);
+    position: absolute;
+    z-index: 10000;
+    background-size: cover;
+
+}
+
+.beerFailedScreen {
+    width: 100%;
+    height: 100%;
+    background-image: url(screen_failedbeer.svg);
+    position: absolute;
+    z-index: 10000;
+    background-size: cover;
+
+}
+
+.game_over_start {
+    width: 17vw;
+    height: 11.6vw;
+    position: absolute;
+    background-image: url(button_newgame.svg);
+    z-index: 10010;
+    background-size: cover;
+    top: 33.2vw;
+    left: 24vw;
+}
+
+.game_over_start:hover {
+
+    width: 20vw;
+    height: 13.5vw;
+    left: 23vw;
+    transform: rotate(25deg);
+}
+
+.game_over_quit {
+    width: 10vw;
+    height: 5vw;
+    position: absolute;
+    background-image: url(button_quit.svg);
+    z-index: 10010;
+    background-size: cover;
+    top: 45.6vw;
+    left: 30vw;
+}
+
+.game_over_quit:hover {
+
+    width: 12vw;
+    height: 6vw;
+    left: 29vw;
+
+}
+
+
+.fish_failed_quit {
+    width: 10vw;
+    height: 5vw;
+    position: absolute;
+    background-image: url(button_quit.svg);
+    z-index: 10010;
+    background-size: cover;
+    top: 46.8vw;
+    left: 24vw;
+}
+
+.fish_failed_quit:hover {
+
+    width: 12vw;
+    height: 6vw;
+    left: 23vw;
+
+}
+
+
+.fish_failed_start {
+    width: 17vw;
+    height: 11.6vw;
+    position: absolute;
+    background-image: url(button_newgame.svg);
+    z-index: 10010;
+    background-size: cover;
+    top: 34vw;
+    left: 20vw;
+}
+
+.fish_failed_start:hover {
+
+    width: 20vw;
+    height: 13.5vw;
+    left: 19vw;
+    transform: rotate(25deg);
+}
+
+
+
+
+
+#level_complete {}
+
+.fishSuccesScreen {
+    width: 100%;
+    height: 100%;
+    background-image: url(screen_tripsuccesfull.svg);
+    position: absolute;
+    z-index: 10000;
+    background-size: cover;
+
+}
+
+.level_complete_start {
+
+    width: 17vw;
+    height: 11.6vw;
+    position: absolute;
+    background-image: url(button_newgame.svg);
+    z-index: 10010;
+    background-size: cover;
+    top: 34.4vw;
+    left: 19vw;
+
+}
+
+.level_complete_start:hover {
+
+    width: 19.3vw;
+    height: 13vw;
+    left: 19vw;
+    transform: rotate(25deg);
+
+
+}
+
+
+.level_complete_start {
+
+    width: 17vw;
+    height: 11.6vw;
+    position: absolute;
+    background-image: url(button_newgame.svg);
+    z-index: 10010;
+    background-size: cover;
+    top: 34.4vw;
+    left: 19vw;
+
+}
+
+.level_complete_start:hover {
+
+    width: 19.3vw;
+    height: 13vw;
+    left: 19vw;
+    transform: rotate(25deg);
+
+
+}
+
+.level_complete_quit {
+
+    width: 10vw;
+    height: 5vw;
+    position: absolute;
+    background-image: url(button_quit.svg);
+    z-index: 10010;
+    background-size: cover;
+    top: 46.8vw;
+    left: 24vw;
+
+}
+
+.level_complete_quit:hover {
+
+    width: 12vw;
+    height: 6vw;
+    left: 23vw;
+
+
+
+}
+
+#game_background {
+    width: 100%;
+    height: 100%;
+    background-image: url(background.svg);
+    position: absolute;
+    background-size: cover;
+    z-index: -20;
+}
+
+#game_foreground {
+    width: 100%;
+    height: 100%;
+    background-image: url(forground.svg);
+    position: absolute;
+    background-size: cover;
+}
+
+#game_elements {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 120;
+}
+
+.play_button_sprite {
+    background-image: url(play_button.svg);
+    background-size: cover;
+    width: 10vw;
+    height: 7vw;
+}
+
+.pause_button_sprite {
+    background-image: url(pause_button.svg);
+    background-size: cover;
+    width: 10vw;
+    height: 7vw;
+}
+
+.pause_button_sprite:hover {
+    width: 11vw;
+    height: 7.6vw;
+}
+
+.home_button_container {
+    position: absolute;
+    top: 10vw;
+    left: -1vw;
+}
+
+
+.home_button_sprite {
+    background-image: url(home_button.svg);
+    background-size: cover;
+    width: 10vw;
+    height: 7vw;
+}
+
+.home_button_sprite:hover {
+    width: 11vw;
+    height: 7.6vw;
+}
+
+.pause_button_container {
+    position: absolute;
+    top: 1vw;
+    left: -1vw;
+}
+
+#fisherman_container {
+    position: absolute;
+    top: 1vw;
+    left: 30vw;
+}
+
+#fisherman_sprite {
+    background-image: url(fisherman.svg);
+    background-size: cover;
+    width: 30vw;
+    height: 30vw;
+
+}
+
+#fish_container {
+    position: absolute;
+
+}
+
+#fish_sprite {
+    background-image: url(element_fish.svg);
+    background-size: cover;
+    width: 15vw;
+    height: 7vw;
+    transform: scaleX(-1);
+}
+
+#stonedfish_container1 {
+    position: absolute;
+    /*bottom: 10vw;
+    right: 15vw;*/
+}
+
+#stonedfish_sprite1 {
+    background-image: url(element_stonedfish.svg);
+    background-size: cover;
+    width: 11vw;
+    height: 8vw;
+}
+
+/* #stonedfish_container2 {
+    position: absolute;
+     bottom: 5vw;
+    right: 45vw; 
+}
+
+#stonedfish_sprite2 {
+    background-image: url(element_stonedfish.svg);
+    background-size: cover;
+    width: 8vw;
+    height: 6vw;
+    transform: scaleX(-1);
+}
+
+#stonedfish_container3 {
+    position: absolute;
+    bottom: 5vw;
+    right: 45vw; 
+}
+
+#stonedfish_sprite3 {
+    background-image: url(element_stonedfish.svg);
+    background-size: cover;
+    width: 4vw;
+    height: 3vw;
+
+}*/
+
+#float_container {
+    position: absolute;
+    bottom: 16vw;
+    left: 32vw;
+}
+
+#float_sprite {
+    background-image: url(element_float.svg);
+    background-size: cover;
+    width: 6vw;
+    height: 12vw;
+}
+
+#beer_container1,
+#beer_container2,
+#beer_container3,
+#beer_container4 {
+    position: absolute;
+    z-index: 50000;
+    width: 3.9vw;
+    height: 4.24vw;
+}
+
+#beer_sprite1,
+#beer_sprite2,
+#beer_sprite3,
+#beer_sprite4 {
+    background-image: url(element_beer.svg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+/*#beer_container2 {
+    position: absolute;
+    z-index: 50000;
+    width: 3.9vw;
+    height: 4.24vw;
+
+
+}
+
+#beer_sprite2 {
+    background-image: url(element_beer.svg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+*/
+/***************** positioner ******************/
+
+.fishpos1 {
+    bottom: 3vw;
+    left: -1vw
+}
+
+.fishpos2 {
+    bottom: 10vw;
+    left: -1vw;
+}
+
+.fishpos3 {
+    bottom: 6vw;
+    left: -1vw;
+}
+
+.fishpos4 {
+    bottom: 7vw;
+    left: -1vw;
+}
+
+.fishpos5 {
+    bottom: 15vw;
+    left: -1vw;
+}
+
+.fishpos6 {}
+
+.fishpos7 {}
+
+
+.beerpos0 {
+
+    left: 3vw;
+}
+
+.beerpos1 {
+
+    left: 10vw;
+}
+
+.beerpos2 {
+
+    left: 8vw;
+}
+
+.beerpos3 {
+
+    right: 10vw;
+}
+
+.beerpos4 {
+
+    right: 5vw;
+}
+
+.beerpos5 {
+
+    right: 7vw;
+}
+
+.beerpos6 {
+
+    right: 2vw;
+}
+
+.beerpos7 {
+
+    right: 3vw;
+}
+
+
+/**************************GAME-UI****************************/
+
+#game_ui {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#score_board {
+    position: absolute;
+    top: 21vw;
+    right: 33vw;
+
+}
+
+#bucket_sprite2 {
+    background-image: url(bucket_empty.svg);
+    background-size: cover;
+    width: 11vw;
+    height: 12vw;
+
+}
+
+#energy_board {
+    position: absolute;
+    top: 15vw;
+    left: 25vw;
+
+
+}
+
+#energy_container {
+    position: absolute;
+    width: 6.4vw;
+    height: 10vw;
+    background-color: yellow;
+    left: 1.7vw;
+    top: 2vw;
+    border-radius: 10px 10px 21px 23px;
+    overflow: hidden;
+}
+
+
+/*progress {
+    color: yellow;
+}
+
+#health {
+    width: 20vw;
+    height: 10vw;
+    transform: rotate(-90deg);
+    column-fill: yellow;
+}*/
+
+#energy_sprite {
+    width: 100%;
+    height: 0;
+    transform-origin: 50% 100%;
+    background-color: white;
+    border-radius: 10px 10px 21px 23px;
+
+
+}
+
+/*.energy {
+    animation-name: time_kf;
+    animation-duration: 20s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes energy_kf {
+    0% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(0);
+    }
+}*/
+
+#beerglass_sprite {
+    background-image: url(empty_beerglass.svg);
+    background-size: cover;
+    width: 11vw;
+    height: 12vw;
+    z-index: 1000;
+    position: absolute;
+
+}
+
+#time_board {
+    position: absolute;
+    z-index: -10;
+}
+
+
+
+
+#sun_sprite {
+    background-image: url(sun.svg);
+    background-size: cover;
+    width: 10vw;
+    height: 8vw;
+}
+
+/************************ANIMATIONS***************************/
+@keyframes falling_kf {
+    0% {
+        transform: translateY(-14vw);
+    }
+
+
+    100% {
+        transform: translateY(30vw);
+
+    }
+}
+
+.falling {
+    animation-name: falling_kf;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movefromleft_kf {
+
+    0% {
+        transform: translateX(-34vw);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+.movefromleft {
+    animation-name: movefromleft_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes movefromright_kf {
+
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+.movefromright {
+    animation-name: movefromright_kf;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes bouncing_kf {
+    from {
+        transform: translateY(-0.5vw);
+    }
+
+    to {
+        transform: translateY(0.7vw);
+    }
+}
+
+.bouncing {
+    animation-name: bouncing_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes sunrise_kf {
+
+    0% {
+        transform: translateX(-10vw) translateY(20vw);
+    }
+
+    50% {
+        transform: translateX(40vw) translateY(-5vw);
+    }
+
+    100% {
+        transform: translateX(100vw) translateY(20vw);
+    }
+}
+
+.sunrise {
+    animation-name: sunrise_kf;
+    animation-duration: 60s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+
+
+
+@keyframes blur_to_gray_kf {
+    0% {
+        -webkit-filter: grayscale(0%);
+    }
+
+    100% {
+        -webkit-filter: grayscale(100%);
+    }
+}
+
+.blur_to_gray {
+    animation-name: blur_to_gray_kf;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+}
+
+@keyframes jumping_fish_kf {
+
+
+
+    100% {
+        transform: translateY(10vw);
+    }
+
+}
+
+.jumping_fish {
+    animation-name: jumping_fish_kf;
+    animation-duration: 1s;
+
+    animation-timing-function: linear;
+}
